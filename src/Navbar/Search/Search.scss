@@ -1,0 +1,56 @@
+.navBar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+
+input {
+  height: 40px;
+  width: 400px;
+  font-size: xx-large;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.dropDown {
+  position: relative;
+  display: inline-block;
+
+
+}
+
+.dropDownContent{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropDownContent button {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.searchButton {
+  height: 40px;
+  width: 100px;
+  margin: 5px;
+  border-radius: 7px;
+}
+
+input:focus {
+ transform: scale(1.03,1.03);
+
+}
+
+.dropDownEvent:focus .dropDownContent {
+  display: block;
+}
+
+
