@@ -8,8 +8,8 @@ import { useEffect, useState } from 'react';
 const App =() => {
 
   const [dataArr, setData] = useState(null);
-
-  
+  const [searchValue, setValue] = useState("");
+  // const [filteredCards, setCards] = useState(null);
   
   
   useEffect(() => {
@@ -25,17 +25,15 @@ const App =() => {
   }, []);
  
 
-
- 
   
 
   return (
    <>
     <div className='navBody'>
-      {dataArr && <Search data={dataArr}></Search>}
+      {dataArr && <Search data={dataArr} searchValue={searchValue} setValue={setValue}></Search>}
     </div>
     <div className='cardBody'>
-      {dataArr && <Card data={dataArr}/>}
+      {dataArr && <Card data={dataArr} searchValue={searchValue}/>}
     </div>
    </>
   );

@@ -1,21 +1,22 @@
 import './Search.scss';
-import { useState } from 'react';
+
 
 
 const Search = (props) => {
-  const dataArr = props
+ 
+  const {data, searchValue, setValue} = props
   
-  const [searchValue, setValue] = useState("");
+ 
 
   
 
   const updateValue = (event) => {
-    setValue(event.target.value.toUpperCase())
+    setValue(event.target.value)
   };
 
 
-  const beerNames = dataArr.data.map((beer) => {
-    return beer.name.toUpperCase()
+  const beerNames = data.map((beer) => {
+    return beer.name
   });
 
 
