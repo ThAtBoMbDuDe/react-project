@@ -1,6 +1,6 @@
 
 import './App.scss';
-import Card from './Main/Card/Card'
+import Card from './Main/CardList/Card/Card'
 import Search from './Navbar/Search/Search'
 import { useEffect, useState } from 'react';
 import Filters from './Navbar/Filter/Filters';
@@ -10,8 +10,9 @@ const App =() => {
 
   const [dataArr, setData] = useState(null);
   const [searchValue, setValue] = useState("");
-  // const [filteredCards, setCards] = useState(null);
-  const [filterState, setState] = useState(null)
+  const [filterABV, setABV] = useState(false)
+  const [filterRange, setRange] = useState(false)
+  const [filterAcid, setAcid] = useState(false)
   
   useEffect(() => {
     const fetchData = async () => {
@@ -26,18 +27,16 @@ const App =() => {
   }, []);
  
 
-  
+
 
   return (
    <>
     <div className='navBody'>
-      <Filters filterState={filterState} setState={setState} ></Filters>
+      <Filters filterABV={filterABV} setABV={setABV} filterRange={filterRange} setRange={setRange} filterAcid={filterAcid} setAcid={setAcid}></Filters>
       {dataArr && <Search data={dataArr} searchValue={searchValue} setValue={setValue}></Search>}
     </div>
     <div className='cardBody'>
-      {dataArr && <Card data={dataArr} searchValue={searchValue}/>}
-      {dataArr && <Card data={dataArr} searchValue={searchValue}/>}
-      {dataArr && <Card data={dataArr} searchValue={searchValue}/>}
+      {dataArr && <Card data={dataArr} searchValue={searchValue} filterABV={filterABV} filterAcid={filterAcid}/>}
     </div>
    </>
   );

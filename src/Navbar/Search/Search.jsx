@@ -33,7 +33,7 @@ const Search = (props) => {
       <div className='dropDown'>
       </div>
       <input type='text' value={searchValue} onChange={updateValue} className='dropDownEvent' placeholder="Search Beers..."></input>
-      <button className='searchButton'>1. {filteredNames[0]}</button>
+      <button className='searchButton'>{filteredNames[0]}</button>
     </div>
   )
 }
