@@ -13,9 +13,8 @@ const Card = (props) => {
     if (beer.name.includes(searchValue)) {
       return beer
     }
-  })
+  });
 
-  console.log(filteredCards)
 
   return (
     <>

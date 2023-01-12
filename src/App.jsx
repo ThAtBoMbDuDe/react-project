@@ -3,14 +3,15 @@ import './App.scss';
 import Card from './Main/Card/Card'
 import Search from './Navbar/Search/Search'
 import { useEffect, useState } from 'react';
-// import { searchValue } from './Navbar/Search/Search';
+import Filters from './Navbar/Filter/Filters';
+
 
 const App =() => {
 
   const [dataArr, setData] = useState(null);
   const [searchValue, setValue] = useState("");
   // const [filteredCards, setCards] = useState(null);
-  
+  const [filterState, setState] = useState(null)
   
   useEffect(() => {
     const fetchData = async () => {
@@ -30,9 +31,12 @@ const App =() => {
   return (
    <>
     <div className='navBody'>
+      <Filters filterState={filterState} setState={setState} ></Filters>
       {dataArr && <Search data={dataArr} searchValue={searchValue} setValue={setValue}></Search>}
     </div>
     <div className='cardBody'>
+      {dataArr && <Card data={dataArr} searchValue={searchValue}/>}
+      {dataArr && <Card data={dataArr} searchValue={searchValue}/>}
       {dataArr && <Card data={dataArr} searchValue={searchValue}/>}
     </div>
    </>
