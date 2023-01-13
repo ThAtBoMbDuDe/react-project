@@ -31,10 +31,10 @@ const Filters = (props) => {
         <input type="checkbox" onChange={abvChange}></input>
         <span className='something'>High ABV (greater than 6%)</span>
       </div>
-      <div className='listItem'>
+      {/* <div className='listItem'>
         <input type="checkbox" onChange={rangeChange}></input>
         <span className='something'>Classic Range</span>
-      </div>
+      </div> */}
       <div className='listItem'>
         <input type="checkbox" onChange={acidChange}></input>
         <span className='something'>Acidic (ph less than 4)</span>

@@ -16,7 +16,7 @@ const App =() => {
   
   useEffect(() => {
     const fetchData = async () => {
-       const res = await fetch("https://api.punkapi.com/v2/beers");
+       const res = await fetch("https://api.punkapi.com/v2/beers?&per_page=80");
       
        const json = await res.json();
 
