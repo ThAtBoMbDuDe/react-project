@@ -11,9 +11,9 @@ console.log(data)
 const filteredBeer = data.filter((beer) =>{
   if(filterABV && filterAcid && beer.abv < 6 && beer.ph < 4){
     return beer
-  } if(filterABV && beer.abv < 6){
+  } if(filterABV && !filterAcid && beer.abv < 6){
     return beer
-  } if(filterAcid && beer.ph < 4){
+  } if(filterAcid && !filterABV && beer.ph < 4){
     return beer
   } if(!filterABV && !filterAcid){
     return beer
