@@ -23,7 +23,7 @@ const filteredBeer = data.filter((beer) =>{
 
 
   const searchedCards = filteredBeer.filter((beer) => {
-    if (beer.name.includes(searchValue)) {
+    if (beer.name.toLowerCase().includes(searchValue.toLowerCase())) {
       return beer
     }
   });
