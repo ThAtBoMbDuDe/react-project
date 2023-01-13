@@ -29,7 +29,7 @@ const Filters = (props) => {
     <div className="listContainer">
       <div className='listItem'>
         <input type="checkbox" onChange={abvChange}></input>
-        <span className='something'>High ABV (greater than 6%)</span>
+        <span className='something'>High ABV</span>
       </div>
       {/* <div className='listItem'>
         <input type="checkbox" onChange={rangeChange}></input>
@@ -37,7 +37,7 @@ const Filters = (props) => {
       </div> */}
       <div className='listItem'>
         <input type="checkbox" onChange={acidChange}></input>
-        <span className='something'>Acidic (ph less than 4)</span>
+        <span className='something'>Acidic</span>
       </div>
     </div>
   </div>

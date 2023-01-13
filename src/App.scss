@@ -1,11 +1,14 @@
-
+.navBody{
+  display: flex;
+  justify-content: space-evenly;
+}
 
 
 .cardBody {
   border: 5px solid black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   background-color: aqua;
   padding: 15px;
   height: 120vh;

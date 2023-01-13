@@ -23,23 +23,10 @@ input {
 }
 
 
-.searchButton {
-  height: 65px;
-  width: 175px;
-  margin: 5px;
-  border-radius: 7px;
-  background-color: black;
-  color: aliceblue;
-  font-weight: bold;
-  font-size: medium;
-}
+
 
 input:focus {
  transform: scale(1.03,1.03);
 }
 
-.searchButton:hover {
-  transform: scale(1.1,1.1);
-  cursor: pointer;
-}
 

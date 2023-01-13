@@ -32,8 +32,8 @@ const App =() => {
   return (
    <>
     <div className='navBody'>
-      <Filters filterABV={filterABV} setABV={setABV} filterRange={filterRange} setRange={setRange} filterAcid={filterAcid} setAcid={setAcid}></Filters>
       {dataArr && <Search data={dataArr} searchValue={searchValue} setValue={setValue}></Search>}
+      <Filters filterABV={filterABV} setABV={setABV} filterRange={filterRange} setRange={setRange} filterAcid={filterAcid} setAcid={setAcid}></Filters>
     </div>
     <div className='cardBody'>
       {dataArr && <Card data={dataArr} searchValue={searchValue} filterABV={filterABV} filterAcid={filterAcid}/>}

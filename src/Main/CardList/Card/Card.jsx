@@ -29,7 +29,7 @@ const filteredBeer = data.filter((beer) =>{
   });
 
   
-console.log(searchedCards)
+
 
 
   return (
