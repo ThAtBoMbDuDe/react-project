@@ -35,40 +35,40 @@ const filteredBeer = data.filter((beer) =>{
   return (
     <>
     {searchedCards[0] && <div className="beerCard">
-      <h1>{searchedCards[0].name}</h1>
-      <h3>{searchedCards[0].tagline}</h3>
+      <h2>{searchedCards[0].name}</h2>
+      <h4>{searchedCards[0].tagline}</h4>
       <img src={searchedCards[0].image_url} alt='Beer Logo'></img>
-      <h4>{searchedCards[0].description}</h4>
+      <h6>{searchedCards[0].description}</h6>
     </div>}
     {searchedCards[1] && <div className="beerCard">
-      <h1>{searchedCards[1].name}</h1>
-      <h3>{searchedCards[1].tagline}</h3>
+      <h2>{searchedCards[1].name}</h2>
+      <h4>{searchedCards[1].tagline}</h4>
       <img src={searchedCards[1].image_url} alt='Beer Logo'></img>
-      <h4>{searchedCards[1].description}</h4>
+      <h6>{searchedCards[1].description}</h6>
     </div>}
     {searchedCards[2] && <div className="beerCard">
-      <h1>{searchedCards[2].name}</h1>
-      <h3>{searchedCards[2].tagline}</h3>
+      <h2>{searchedCards[2].name}</h2>
+      <h4>{searchedCards[2].tagline}</h4>
       <img src={searchedCards[2].image_url} alt='Beer Logo'></img>
-      <h4>{searchedCards[2].description}</h4>
+      <h6>{searchedCards[2].description}</h6>
     </div>}
     {searchedCards[3] && <div className="beerCard">
-      <h1>{searchedCards[3].name}</h1>
-      <h3>{searchedCards[3].tagline}</h3>
+      <h2>{searchedCards[3].name}</h2>
+      <h4>{searchedCards[3].tagline}</h4>
       <img src={searchedCards[3].image_url} alt='Beer Logo'></img>
-      <h4>{searchedCards[3].description}</h4>
+      <h6>{searchedCards[3].description}</h6>
     </div>}
     {searchedCards[4] && <div className="beerCard">
-      <h1>{searchedCards[4].name}</h1>
-      <h3>{searchedCards[4].tagline}</h3>
+      <h2>{searchedCards[4].name}</h2>
+      <h4>{searchedCards[4].tagline}</h4>
       <img src={searchedCards[4].image_url} alt='Beer Logo'></img>
-      <h4>{searchedCards[4].description}</h4>
+      <h6>{searchedCards[4].description}</h6>
     </div>}
     {searchedCards[5] && <div className="beerCard">
-      <h1>{searchedCards[5].name}</h1>
-      <h3>{searchedCards[5].tagline}</h3>
+      <h2>{searchedCards[5].name}</h2>
+      <h4>{searchedCards[5].tagline}</h4>
       <img src={searchedCards[5].image_url} alt='Beer Logo'></img>
-      <h4>{searchedCards[5].description}</h4>
+      <h6>{searchedCards[5].description}</h6>
     </div>}
 
 
